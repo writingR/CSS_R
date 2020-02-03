@@ -1,0 +1,40 @@
+<!-- 부모 자식 선택자 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div.color_box_red span {background-color: red;}
+    div#color_box_gray span {background-color: gray;}
+    div span#box_blue_span {color: blue;}
+    div:nth-child(4) span {color:brown;}
+  </style>
+</head>
+<body>
+  <div class="color_box_red">
+		<span>
+			red_box div class 내의 span!
+		</span>
+	</div>
+	<div id="color_box_gray">
+		<span>
+			gray_box div id 내의 span!
+		</span>
+	</div>
+	<div>
+		<span id="box_blue_span">
+			div 내의 box_blue_span id span!
+		</span>
+	</div>
+	<div>
+		<span>
+			4번째 div 내에 span!
+		</span>
+	</div>
+</body>
+</html>
+
